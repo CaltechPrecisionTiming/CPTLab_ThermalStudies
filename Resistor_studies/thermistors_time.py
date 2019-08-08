@@ -1,5 +1,5 @@
 # Functions of this script: 
-# 	- Makes plots of raw thermistor temperature agains time 
+# 	- Makes plots of raw thermistor temperature against time 
 #	- Performs the calibration calculation
 #	- Fits a function to the data and plots that function
 #	- Generates a plot of the gradient across the plate
