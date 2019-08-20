@@ -1,9 +1,9 @@
-#Documentation for resistor studies
+# Documentation for resistor studies
 
-##Purpose:
+## Purpose:
 - Used to analyse data from studies where the dummy resistor loads were used to generate heat
 
-##Description of included files:
+## Description of included files:
 
 **thermistors_time.py**
 - Uses variables to convert th data in csv files to arrays
