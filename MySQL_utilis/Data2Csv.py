@@ -7,8 +7,8 @@ import os
 def string_to_date(time):
     return time[2:4]+time[5:7]+time[8:10]+time[11:13]+time[14:16]+time[17:19]
 #parameters
-START_TIME = '2019-07-22 10:27:00'
-END_TIME = '2019-07-22 15:27:00'
+START_TIME = '2019-09-17 00:00:00'
+END_TIME = '2019-09-17 00:25:00'
 TABLE_NAME = 'ThermalBoard16ch'
 #OUTPUT_DIR ='/home/cptlab/Desktop/MySQLdb_python/output/' 
 OUTPUT_DIR ='/home/cptlab/Desktop/MySQLdb_python/output/'+TABLE_NAME+'/' 
