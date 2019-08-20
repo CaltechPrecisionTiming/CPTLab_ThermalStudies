@@ -17,7 +17,21 @@ All of the repositories contain the same files, they are just configured for a d
 - 3 ADCs, 24 channels
 
 ## Description of the files included:
+
+### Configuration 
+
 **config.conf** 
+
 **configuration.c** 
+
 **configuration.h**
---------------------------------------------
+
+### cratecontrol
+
+**cratecontrol.cpp** 
+
+### databasesectr 
+
+**databasesectr.cpp** 
+
+**databasesectr.h**
