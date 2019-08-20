@@ -9,9 +9,11 @@ All of the repositories contain the same files, they are just configured for a d
 
 **thermistors_8**
 - 1 ADC, 8 channels
+- ChipCap 2-SIP, Adafruit HTU21D-F
 
 **thermistors_16** 
 - 2 ADCs, 16 channels
+- ChipCap 2-SIP, Adafruit HTU21D-F, Sparkfun HIH6130 and Sparkfun Si7021 sensors
 
 **thermistors_24**
 - 3 ADCs, 24 channels
@@ -21,7 +23,7 @@ All of the repositories contain the same files, they are just configured for a d
 ### configuration 
 
 **config.conf** 
-- ?? 
+- ?
 
 **configuration.h**
 
@@ -34,7 +36,7 @@ All of the repositories contain the same files, they are just configured for a d
 
 **gpiointerf.cpp** 
 - constructor: calls initialize on all ADCs 
-- initialize: ??
+- initialize: ?
 - TH: function to read from ChipCap 2-SIP temperature and humidity sensor 
 - TH2: function to read from Adafruit HTU21D-F temperature and humidity sensor
 - TH_HIH6130: function to read from Sparkfun HIH6130 temperature and humidity sensor
