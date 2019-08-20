@@ -14,5 +14,3 @@ During the thermal studies the SiPMs of the BTL were simulated with resistors. F
 
 **raspberry_pi** 
 Includes copies of all the scripts written to communicate with the ADC to collect data from thermistors. There are also files included that establish a connection to the MySQL database and insert the new data into it.
-
-*IP Adress of this Raspberry Pi: 192.168.0.168*
