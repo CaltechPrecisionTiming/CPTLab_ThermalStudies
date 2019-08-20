@@ -18,20 +18,41 @@ All of the repositories contain the same files, they are just configured for a d
 
 ## Description of the files included:
 
-### Configuration 
+### configuration 
 
 **config.conf** 
-
-**configuration.c** 
+- ?? 
 
 **configuration.h**
 
-### cratecontrol
 
-**cratecontrol.cpp** 
+**configuration.c** 
+
+### gpiointerf
+
+**gpiointerf.h**
+- header file 
+
+**gpiointerf.cpp** 
+- constructor: calls initialize on all ADCs 
+- initialize: ??
+- TH: function to read from ChipCap 2-SIP temperature and humidity sensor 
+- TH2: function to read from Adafruit HTU21D-F temperature and humidity sensor
+- TH_HIH6130: function to read from Sparkfun HIH6130 temperature and humidity sensor
+- TH_Si7021: function to read from Sparkfun Si7021 temperature and humidity sensor
+- Temp: reads temperature of a specified thermistor channel 
+- activate: if statements for each ADC to be started
+- desconnect: disconnects from all? 
 
 ### databasesectr 
 
 **databasesectr.cpp** 
 
 **databasesectr.h**
+
+### cratecontrol
+
+**cratecontrol.cpp** 
+- Defines: number of ADCs, channels
+- main function: starts BTL monitoring system, initializes ADCs that need to be used, 
+
