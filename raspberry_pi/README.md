@@ -25,13 +25,12 @@ All of the repositories contain the same files, they are just configured for a d
 
 **configuration.h**
 
-
 **configuration.c** 
 
 ### gpiointerf
 
 **gpiointerf.h**
-- header file 
+- header file for gpiointerf.cpp
 
 **gpiointerf.cpp** 
 - constructor: calls initialize on all ADCs 
@@ -45,14 +44,20 @@ All of the repositories contain the same files, they are just configured for a d
 - desconnect: disconnects from all? 
 
 ### databasesectr 
+**databasesectr.h**
+- header file for databasesectr.cpp
 
 **databasesectr.cpp** 
-
-**databasesectr.h**
+- constructor: ? 
+- DBconfig: connects to MySQL database 
+- mysql_diconnect: closes connection to dtabase
+- set_Dat: produces string command for MySQL with data
+- set_Im: ?
+- set_T: ? 
 
 ### cratecontrol
 
 **cratecontrol.cpp** 
 - Defines: number of ADCs, channels
-- main function: starts BTL monitoring system, initializes ADCs that need to be used, 
+- main function: starts BTL monitoring system, initializes ADCs that need to be used, reads thermistors temperatures and enviromental sensors, connects to database and inserts the data
 
