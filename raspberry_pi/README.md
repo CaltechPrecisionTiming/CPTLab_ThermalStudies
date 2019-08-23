@@ -21,9 +21,9 @@ All of the repositories contain the same files, they are just configured for a d
 ## Description of the files included:
 
 ### configuration 
+- configuration files
 
 **config.conf** 
-- ?
 
 **configuration.h**
 
@@ -36,7 +36,6 @@ All of the repositories contain the same files, they are just configured for a d
 
 **gpiointerf.cpp** 
 - constructor: calls initialize on all ADCs 
-- initialize: ?
 - TH: function to read from ChipCap 2-SIP temperature and humidity sensor 
 - TH2: function to read from Adafruit HTU21D-F temperature and humidity sensor
 - TH_HIH6130: function to read from Sparkfun HIH6130 temperature and humidity sensor
@@ -54,8 +53,6 @@ All of the repositories contain the same files, they are just configured for a d
 - DBconfig: connects to MySQL database 
 - mysql_diconnect: closes connection to dtabase
 - set_Dat: produces string command for MySQL with data
-- set_Im: ?
-- set_T: ? 
 
 ### cratecontrol
 
