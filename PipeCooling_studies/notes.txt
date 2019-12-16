@@ -1,0 +1,1 @@
+mysql -h192.168.0.109 -uremote -pCptlab30ps!

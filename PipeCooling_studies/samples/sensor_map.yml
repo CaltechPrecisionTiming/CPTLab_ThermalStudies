@@ -1,0 +1,19 @@
+air_test:
+  - 'air'
+  - 'OutOfService'
+  - 'air'
+  - 'air'
+  - 'air'
+  - 'air'
+  - 'air'
+  - 'air'
+
+  foam_test:
+    - 'foam'
+    - 'foam'
+    - 'foam'
+    - 'foam'
+    - 'foam'
+    - 'foam'
+    - 'foam'
+    - 'foam'
