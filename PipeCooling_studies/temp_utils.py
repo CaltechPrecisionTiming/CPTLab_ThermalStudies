@@ -17,7 +17,7 @@ def R2adc(r, R=19e3, Vref=2.5):
 def R2T(R, beta=3892.0, T0=25.0, R0=5e3):
     T0 += 273.15
     r_inf = R0*np.exp(-beta/T0)
-    T = beta/np.log(R/r_inf)
+    T = beta/np.log(R.astype('float')/r_inf)
     return T - 273.15
 
 
