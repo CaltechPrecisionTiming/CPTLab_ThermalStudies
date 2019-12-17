@@ -30,3 +30,11 @@ run3:
   notes: 'Lower temp'
   times:
     - ['2019-12-16 19:43:00', '2019-12-16 23:20:00']
+
+run4:
+  temp: 5
+  voltage: 30
+  sensor_map: 'run_v0'
+  notes: 'Lower temp'
+  times:
+    - ['2019-12-17 01:20:00', '2019-12-17 9:00:00']
