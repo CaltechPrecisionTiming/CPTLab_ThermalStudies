@@ -11,9 +11,11 @@ run1:
   temp: 15
   voltage: 0
   sensor_map: 'run_v0'
-  notes: 'First runs, connected to pipe yet'
+  notes: 'First runs, connected to pipe'
   times:
     - ['2019-12-16 19:15:00', '2019-12-16 19:43:00']
+  steady:
+    - [22., 30.]
 
 run2:
   temp: 15
@@ -22,6 +24,8 @@ run2:
   notes: 'First with voltage'
   times:
     - ['2019-12-16 19:43:00', '2019-12-16 19:52:00']
+  steady:
+    - [4., 8.]
 
 run3:
   temp: 12
@@ -30,6 +34,8 @@ run3:
   notes: 'Lower temp'
   times:
     - ['2019-12-16 19:43:00', '2019-12-16 23:20:00']
+  steady:
+    - [75., 100.]
 
 run4:
   temp: 5
@@ -38,3 +44,5 @@ run4:
   notes: 'Lower temp'
   times:
     - ['2019-12-17 01:24:00', '2019-12-17 01:47:30']
+  steady:
+    - [15., 21.]

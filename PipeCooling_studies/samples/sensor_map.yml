@@ -29,11 +29,11 @@ plate_test:
   - 'plate'
 
 run_v0:
-  - 'pipe out 0'
+  - 'pipe out 1'
   - 'Cooland out'
   - 'pipe in 0'
   - 'pipe in 1'
   - 'pipe out 0'
-  - 'package left'
-  - 'package center'
-  - 'package right border'
+  - 'pkg L'
+  - 'pkg C'
+  - 'pkg R border'
