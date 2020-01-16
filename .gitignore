@@ -1,2 +1,4 @@
 .ipynb_checkpoints
 *.pyc
+*.o
+raspberry_pi/thermistors/cratecontrol
