@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <cmath>
 #include <stdlib.h>
+#include <time.h>
 #include <stdbool.h>
 #include <fstream>
 #include "gpiointerf.h"
@@ -59,6 +60,14 @@ double adc2T(double c) {
   return R2T(adc2R(c));
 }
 
+string strCurrentTime() {
+  time_t now = time(0);
+  struct tm tstruct;
+  char buf[80];
+  tstruct = *localtime(&now);
+  strftime(buf, sizeof(buf), "%X", &tstruct);
+  return buf;
+}
 
 int main (void)
 {
@@ -88,6 +97,7 @@ int main (void)
       rp1->initialize();
       std::cout<<"rp1 reinitialized"<<std::endl;
     }
+    cout << strCurrentTime() << " | ";
     for(int i=0; i<NumTerm; i++){
       temp[i]=rp1->Temp(i);
       printf("%d: %.2f (%.0f) | ", i, adc2T(temp[i]), temp[i]);
