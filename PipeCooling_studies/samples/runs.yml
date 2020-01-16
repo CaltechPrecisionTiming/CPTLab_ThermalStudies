@@ -1,4 +1,5 @@
 run0:
+  conditions: 'v0'
   temp: 15
   voltage: 0
   sensor_map: 'run_v0'
@@ -8,6 +9,7 @@ run0:
     - ['2019-12-16 18:00:00', '2019-12-16 18:20:00']
 
 run1:
+  conditions: 'v0'
   temp: 15
   voltage: 0
   sensor_map: 'run_v0'
@@ -18,6 +20,7 @@ run1:
     - [22., 30.]
 
 run2:
+  conditions: 'v0'
   temp: 15
   voltage: 30
   sensor_map: 'run_v0'
@@ -28,6 +31,7 @@ run2:
     - [4., 8.]
 
 run3:
+  conditions: 'v0'
   temp: 12
   voltage: 30
   sensor_map: 'run_v0'
@@ -38,6 +42,7 @@ run3:
     - [75., 100.]
 
 run4:
+  conditions: 'v0'
   temp: 5
   voltage: 30
   sensor_map: 'run_v0'
@@ -46,3 +51,32 @@ run4:
     - ['2019-12-17 01:24:00', '2019-12-17 01:47:30']
   steady:
     - [15., 21.]
+
+run5:
+  conditions: 'v1'
+  temp: 21.5
+  voltage: 0
+  sensor_map: 'run_v0'
+  notes: 'Room T test'
+  times:
+    - ['2020-01-15 14:00:00', '2020-01-15 14:05:00']
+
+run6:
+  conditions: 'v1'
+  temp: 15
+  voltage: 0
+  sensor_map: 'run_v0'
+  notes: 'Cool test with new fin'
+  times:
+    - ['2020-01-15 14:15:00', '2020-01-15 14:30:00']
+
+run7:
+  conditions: 'v1'
+  temp: 15
+  voltage: 30
+  sensor_map: 'run_v0'
+  notes: 'Cool test with new fin'
+  times:
+    - ['2020-01-15 18:10:00', '2020-01-15 18:33:00']
+  steady:
+    - [14., 17.]
