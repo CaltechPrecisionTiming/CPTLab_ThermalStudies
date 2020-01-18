@@ -1,5 +1,27 @@
 v0:
+  matPlateSupport: true
+  supportThickness: 1.05 #mm
   support: 'old L'
 
 v1:
-  support: 'big L'
+  matPlateSupport: false
+  supportThickness: 1.45 #mm
+  support: 'tall L'
+
+v2:
+  matPlateSupport: false
+  supportThickness: 1.45 #mm
+  support: 'short L'
+
+v3:
+  matPlateSupport: false
+  supportThickness: 1.45 #mm
+  supportWidth: 18.5 #mm
+  support: 'Z shape'
+
+v4:
+  matPlateSupport: false
+  supportThickness: 1.45 #mm
+  supportWidth: 18.5 #mm
+  support: 'Z shape'
+  heatPadR: 150 #Ohm

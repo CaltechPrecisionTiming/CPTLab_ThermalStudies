@@ -30,7 +30,7 @@ plate_test:
 
 run_v0:
   - 'pipe out 1'
-  - 'Cooland out'
+  - 'Ext. pipe'
   - 'pipe in 0'
   - 'pipe in 1'
   - 'pipe out 0'

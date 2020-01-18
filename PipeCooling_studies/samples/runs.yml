@@ -78,5 +78,87 @@ run7:
   notes: 'Cool test with new fin'
   times:
     - ['2020-01-15 18:10:00', '2020-01-15 18:33:00']
+    - ['2020-01-16 09:32:00', '2020-01-16 09:54:00']
   steady:
     - [14., 17.]
+    - [16., 17.6]
+
+run8:
+  conditions: 'v2'
+  temp: 15
+  voltage: 30
+  sensor_map: 'run_v0'
+  notes: 'Cool test with small fin'
+  times:
+    - ['2020-01-16 10:18:00', '2020-01-16 10:38:00']
+  steady:
+    - [12., 17.]
+
+run9:
+  conditions: 'v2'
+  temp: 10
+  voltage: 30
+  sensor_map: 'run_v0'
+  notes: 'Cool test with small fin'
+  times:
+    - ['2020-01-16 10:40:00', '2020-01-16 10:54:00']
+  steady:
+    - [6., 10.]
+
+run10:
+  conditions: 'v3'
+  temp: 15
+  voltage: 0
+  sensor_map: 'run_v0'
+  notes: 'Cool test with Z'
+  times:
+    - ['2020-01-16 14:40:00', '2020-01-16 14:54:00']
+
+run11:
+  conditions: 'v3'
+  temp: 15
+  voltage: 30
+  sensor_map: 'run_v0'
+  notes: 'Cool test with Z and SiPM power'
+  times:
+    - ['2020-01-16 15:50:00', '2020-01-16 16:05:00']
+    - ['2020-01-16 16:06:00', '2020-01-16 16:21:00']
+  steady:
+    - [10.5, 13.]
+    - [5, 8.]
+
+run12:
+  conditions: 'v4'
+  temp: 15
+  voltage: 30
+  heatPadV: 11
+  sensor_map: 'run_v0'
+  notes: 'First heatPad'
+  times:
+    - ['2020-01-16 16:28:00', '2020-01-16 17:06:00']
+  steady:
+    - [27, 32.]
+
+run13:
+  conditions: 'v4'
+  temp: 15
+  voltage: 30
+  heatPadV: 15.49
+  sensor_map: 'run_v0'
+  notes: 'First heatPad'
+  times:
+    - ['2020-01-16 17:05:00', '2020-01-16 17:55:00']
+  steady:
+    - [25, 30.]
+
+run14:
+  conditions: 'v4'
+  temp: 15
+  voltage: 30
+  heatPadV: 21.91
+  sensor_map: 'run_v0'
+  notes: 'Over-heated pad'
+  times:
+    - ['2020-01-17 11:05:00', '2020-01-17 12:20:00']
+  steady:
+    - [45, 51.]
