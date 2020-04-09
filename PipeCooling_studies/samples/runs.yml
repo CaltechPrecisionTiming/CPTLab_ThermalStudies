@@ -28,7 +28,7 @@ run2:
   times:
     - ['2019-12-16 19:43:00', '2019-12-16 19:52:00']
   steady:
-    - [4., 8.]
+    - [5., 8.5]
 
 run3:
   conditions: 'v0'
@@ -162,3 +162,26 @@ run14:
     - ['2020-01-17 11:05:00', '2020-01-17 12:20:00']
   steady:
     - [45, 51.]
+
+run15:
+  conditions: 'v2'
+  temp: 15
+  voltage: 30
+  sensor_map: 'run_v0'
+  notes: 'Array moved in the middle of the cooling support'
+  times:
+    - ['2020-01-27 16:33:00', '2020-01-27 17:00:00']
+  steady:
+    - [14, 17.]
+
+run16:
+  conditions: 'v5'
+  temp: 15
+  voltage: 40.5
+  current: 0.045
+  sensor_map: 'run_v0'
+  notes: 'First run with SiPM, tried both with and without various covers, array in the middle of the support'
+  times:
+    - ['2020-01-28 18:20:00', '2020-01-28 19:00:00']
+  # steady:
+  #   - [14, 17.]

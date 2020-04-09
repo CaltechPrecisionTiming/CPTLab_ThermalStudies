@@ -25,3 +25,9 @@ v4:
   supportWidth: 18.5 #mm
   support: 'Z shape'
   heatPadR: 150 #Ohm
+
+v5:
+  SiPM: true
+  matPlateSupport: false
+  supportThickness: 1.45 #mm
+  support: 'short L'
