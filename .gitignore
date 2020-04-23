@@ -2,3 +2,4 @@
 *.pyc
 *.o
 raspberry_pi/thermistors/cratecontrol
+DN-20-013
