@@ -1,16 +1,18 @@
 # CPTLab_ThermalStudies
 CPTLab Thermal Studies
 
-This is a repository for scripts that were used for data analysis and calibration fot the Thermal Studies of the BTL, summer 2019. 
+This is a repository for code that was used to collect thermal dissipation data for the BTL SiPM module during summer 2021.
 
-Note that there are txt files in each repository giving more information about the scripts included.
 
 ## Repository Descriptions
-**Calibration**
-Used to calibrate the thermistors with the degrees celcius reading of the RTD.
+**BK_PS**
+Contains scripts that control the power supply that runs current through the SiPM array to model dark current production. These were modified to be completely automatic and can be run remotely.
 
-**Resistor_studies**
-During the thermal studies the SiPMs of the BTL were simulated with resistors. For the analysis of the results when the resistors were turned on there are multiple scripts. The repository also includes scripts to compare two different data sets. These scripts were used for the tests with ceramics. 
+**MySQL_utilis**
+This mainly contains a program that converts data read out from thermistors into an SQL database to csv files that can be analyzed and plotted using the programs within SiPM_Heating. 
 
-**raspberry_pi** 
-Includes copies of all the scripts written to communicate with the ADC to collect data from thermistors. There are also files included that establish a connection to the MySQL database and insert the new data into it.
+**SiPM_Heating** 
+Contains a script that plots thermistor readout data in a readable, easily customizable, fashion. Also contains copies of relavant csv datasets for ease of access. 
+
+**thermistors**
+Contains all programs used to read data out from the thermistors into an SQL database, which can then be accessed using MySQL_utilis.
