@@ -52,7 +52,10 @@ def ChRead(Resource, safetyCheck=True):
     I = float(Resource.query('MEASure:CURRent:DC?'))
     print("Current",I)
     print("Voltage",V)
-    P = V*I
+    R_s = 1.7
+    R_wires = 0.3
+    V_s = V * (R_s/(R_s + R_wires))
+    P = V_s * I
     print("Power",P)
     return V, I, P
     
