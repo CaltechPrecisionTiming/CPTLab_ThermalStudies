@@ -44,7 +44,7 @@ def SetVoltage(Resource, ChVoltage, safetyCheck=False):
     else:
         print ('[WARNING] : The voltage is out of the bounds [0-2V], not changing the low voltage supply output')
 
-def ChRead(Resource, safetyCheck=True):
+ddef ChRead(Resource, safetyCheck=True):
     Resource.write('*IDN?')
     idn = Resource.read()
 
@@ -52,13 +52,21 @@ def ChRead(Resource, safetyCheck=True):
     I = float(Resource.query('MEASure:CURRent:DC?'))
     print("Current",I)
     print("Voltage",V)
-    R_s = 1.7
-    R_wires = 0.3
-    V_s = V * (R_s/(R_s + R_wires))
-    P = V_s * I
+
+    # open-pin prototype resistance correction values
+    #R_s = 1.7
+    #R_wires = 0.19
+
+    # flex-cable prototype resistance correction values
+    #R_s = 0.286
+    R_wires = 0.19
+
+
+    V_s = V - (R_wires * I)
+    P = V_s*I
     print("Power",P)
     return V, I, P
-    
+
 def DisableLVOutput(Resource):
     Resource.write("outp off")
     #Resource.read()
